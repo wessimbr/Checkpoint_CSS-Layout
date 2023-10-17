@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* ***part1*** */
+.part1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+}
+
+.intro p {
+    line-height: 1.8;
+    padding: 20px;
+}
+
+.part1 h1 {
+    color: #00b39b;
+    font-weight: 100;
+
+}
+
+#img1{
+    padding: 20px;
+}
+
+/* ***part2*** */
+
+.part2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; 
+}
+
+.patients {
+    background-color: #00ccb1;
+}
+
+.doctors {
+    background-color: #3d83df;
+}
+
+.clinics {
+    background-color: #1b2734;
+}
+
+.box {
+    height: 300px;
+    border-radius: 10px;
+    padding: 32px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.box p {
+    font-size: 20px;
+}
+
+.box h2 {
+    font-size: 30px;
+}
+
+select {
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    color: white;
+    font-size: 17px;
+}
+
+option {
+    color: black;
+}
+
+.part2, .part1 {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* ***part3*** */
+.part3{
+    background-color: #dff8f6;
+    height: 600px;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+
+}
+.plateform{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+    width: 70%;
+    margin: auto;
+
+}
+.stats h1{
+    color: #00b39b;
+    font-weight: 100;
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.logo{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap:20px;
+    padding-top: 25px;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    font-family: Roboto,Arial,sans-serif;
+}
+.card h1{
+    color: #00b39b;
+    font-weight: 100;
+}
+.translate{
+    transform:translateY(20px);
+}
+
+/* ***part4*** */
+
+.part4 {
+    max-width: 460px;
+    margin:  auto;
+    text-align: center;
+}
+.part4 h1{
+    color:#00b39b;
+    font-weight: 100;
+    margin:40px;
+}
+.part4 p{
+    font-weight: 100;
+    margin:20px;
+}
+
+/* ***part5*** */
+
+.part5 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.part5 img{
+    height: 300px;
+    margin: 20px;
+
+}
+.part5 h1{
+    color: #747474;
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    .intro {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap:20px;
+    }
+    .part1 {
+        width: 100%;
+    }
+    .part1 h1 {
+        text-align: center;
+    }
+    .part2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+    .plateform{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:20px;
+        width: 100%;
+        margin: auto;
+    
+    }
+    .stats p{
+        width: 100%;
+        text-align: center;
+    }
+    .stats h1{
+        width: 100%;
+        text-align: center;
+    }
+    .crad{
+        z-index: -1;
+    }
+    .cards{
+        position:relative;
+    }
+    .logo{
+        position: absolute;
+        top:50%;
+        left:0%;
+
+    }
+    .part5 img{
+        height: 150px;
+        margin: 20px; 
+    }
+
+}
